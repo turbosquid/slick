@@ -1,6 +1,6 @@
 {
   "name": "slick-carousel-browserify",
-  "version": "1.6.11",
+  "version": "1.6.12",
   "description": "Slick Carousel adapted to browserify",
   "main": "slick/slick.js",
   "repository": {
