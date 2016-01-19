@@ -1,21 +1,22 @@
 {
-  "name": "slick-carousel",
-  "version": "1.5.9",
-  "description": "the last carousel you'll ever need",
+  "name": "slick-carousel-browserify",
+  "version": "1.6.9",
+  "description": "Slick Carousel adapted to browserify",
   "main": "slick/slick.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kenwheeler/slick.git"
+    "url": "https://github.com/arielpchara/slick.git"
   },
   "keywords": [
     "carousel",
     "slick",
-    "responsive"
+    "responsive",
+    "browserify"
   ],
-  "author": "Ken Wheeler",
+  "author": ["Ariel Pchara", "Ken Wheeler"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kenwheeler/slick/issues"
+    "url": "https://github.com/arielpchara/slick/issues"
   },
   "dependencies": {
     "jquery": ">=1.7.2"

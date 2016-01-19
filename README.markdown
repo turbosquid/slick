@@ -5,28 +5,11 @@ slick
 
 _the last carousel you'll ever need_
 
+All credits to Ken Wheeler
+
 #### Demo
 
 [http://kenwheeler.github.io/slick](http://kenwheeler.github.io/slick/)
-
-#### CDN
-
-CDN hosted slick is a great way to get set up quick:
-
-In your ```<head>``` add:
-
-````
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-
-// Add the slick-theme.css if you want default styling
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
-````
-
-Then, before your closing ```<body>``` tag add:
-
-```
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-```
 
 #### Package Managers
 
@@ -148,18 +131,21 @@ swipe | event, slick, direction | Fires after swipe/drag
 Methods are called on slick instances through the slick method itself in version 1.4, see below:
 
 ```javascript
+
+var slick = require('slick-carousel-browserify');
+
 // Add a slide
-$('.your-element').slick('slickAdd',"<div></div>");
+slick($('.your-element'), 'slickAdd',"<div></div>");
 
 // Get the current slide
-var currentSlide = $('.your-element').slick('slickCurrentSlide');
+var currentSlide = slick($('.your-element'), 'slickCurrentSlide');
 ```
 
 This new syntax allows you to call any internal slick method as well:
 
 ```javascript
 // Manually refresh positioning of slick
-$('.your-element').slick('setPosition');
+slick($('.your-element'), 'setPosition');
 ```
 
 
@@ -186,7 +172,8 @@ slickSetOption | option : string(option name), value : depends on option, refres
 Initialize with:
 
 ```javascript
-$(element).slick({
+var slick = require('slick-carousel-browserify');
+slick($(element), {
   dots: true,
   speed: 500
 });
@@ -195,7 +182,8 @@ $(element).slick({
 Destroy with:
 
 ```javascript
-$(element).slick('unslick');
+var slick = require('slick-carousel-browserify');
+slick($(element), 'unslick');
 ```
 
 

@@ -319,7 +319,7 @@
     };
 
     Slick.prototype.getNavTarget = function() {
-        
+
         var _ = this,
             asNavFor = _.options.asNavFor;
 
@@ -2207,9 +2207,9 @@
         _.currentSlide = animSlide;
 
         _.setSlideClasses(_.currentSlide);
-        
+
         if ( _.options.asNavFor ) {
-            
+
             navTarget = _.getNavTarget();
             navTarget = navTarget.slick('getSlick');
 
@@ -2684,6 +2684,10 @@
             if (typeof ret != 'undefined') return ret;
         }
         return _;
+    };
+
+    return function (el) {
+      $.fn.slick.apply(el);
     };
 
 }));
