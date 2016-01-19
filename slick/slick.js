@@ -2687,7 +2687,8 @@
     };
 
     return function () {
-      $.fn.slick.apply(Array.prototype.slice.call(arguments));
+      var args = Array.prototype.slice.call(arguments);
+      $.fn.slick.apply(args[0], args.slice(1));
     };
 
 }));
