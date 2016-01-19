@@ -2686,8 +2686,8 @@
         return _;
     };
 
-    return function (el) {
-      $.fn.slick.apply(el);
+    return function () {
+      $.fn.slick.apply(arguments);
     };
 
 }));
