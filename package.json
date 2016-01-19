@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/arielpchara/slick.git"
   },
+  "scripts": {
+    "release": "npm version patch && npm publish && git push --follow-tags"
+  },
   "keywords": [
     "carousel",
     "slick",
