@@ -1,11 +1,11 @@
 {
   "name": "slick-carousel-browserify",
-  "version": "1.6.12",
+  "version": "0.0.1",
   "description": "Slick Carousel adapted to browserify",
   "main": "slick/slick.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arielpchara/slick.git"
+    "url": "https://github.com/turbosquid/slick.git"
   },
   "scripts": {
     "release": "npm version patch && npm publish && git push --follow-tags"
@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arielpchara/slick/issues"
+    "url": "https://github.com/turbosquid/slick/issues"
   },
   "dependencies": {
     "jquery": ">=1.7.2"
